@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 
 function App() {
-  const [search, setSerach] = useState("chiken");
+  const [search, setSerach] = useState("");
   const [recipes, setRecipes] = useState([]);
   const APP_ID="ed7058fd";
   const APP_KEY="9de2031bd7965fc74a5824420d75e539";
@@ -43,14 +43,14 @@ function App() {
       onSearchClick={onSearchClick}
       
       />
-      {/* <h1>Food</h1> */}
+  
      <div className="container">
      <Recipes
      recipes={recipes}
      
      />
      </div>
-      {/* <RecipeItem/> */}
+      
       <Footer/>
     </div>
   );

@@ -5,9 +5,11 @@
 
 footer
 {
+    bottom: 0;
+    position: fixed;
     background-color: black;
     color: white;
-    width: auto;
+    width: 100%;
     height: 16vh;
     display:grid;
     grid-template-columns: 250px 400px;
@@ -30,13 +32,14 @@ footer
 }
 .follow a i
 {
-    color: white;
+    /* color: white; */
     text-decoration: none;
     margin-bottom: 10px;
 }
 .follow i:hover
 {
-color: rgb(134, 86, 86);
+/* color: rgb(134, 86, 86); */
+color: white;
 }
 
 /* responsive design  */
