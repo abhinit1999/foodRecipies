@@ -5,6 +5,9 @@
 }
 header
 {
+  top: 0;
+  position: fixed;
+  width: 100%;
     padding: 10px;
     display: grid;
     grid-template-columns: 30% 70% ;
@@ -13,7 +16,7 @@ header
 
     background-color: rgb(73, 113, 132);
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
-
+/* margin-bottom: 130px; */
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
@@ -45,7 +48,8 @@ input[type=text]
   border-left: none;
   border-right: none;
   background-color: rgb(222, 237, 229);
-outline: none;
+color: rgb(51, 103, 101);
+  outline: none;
 border-radius: 20px;
 }
 
@@ -80,7 +84,7 @@ button:hover
    
     .text h1
     {
-        /* font-size: 15px; */
+        font-size: 20px;
         flex-wrap: wrap;
         margin: auto;
         margin-left: 3px;

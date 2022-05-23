@@ -1,35 +1,18 @@
-// import React from 'react'
-
-// const Recipies = (props) => {
-//   return (
-//     <div>
-//       <h1>Image</h1>
-//       <span><img src={props.image} alt="Img" /></span>
-    
-    
-//       {/* {props.ingredientLines.map(ingredient => (
-//             <li className="list-group-item">{ingredient}</li>
-//           ))} */}
-    
-//     </div>
-//   )
-// }
-
-// export default Recipies;
-
-
-
-
-
-
-
 import React from "react";
+import RecipeItem from "./RecipeItem";
 
-const Recipes = () => {
-  
+const Recipes = (props) => {
+  const { recipes } = props;
   return (
-    <div>
-     <h3>Recipies</h3>
+    <div class="card-columns">
+      {recipes.map(recipe => (
+        <RecipeItem
+          key={Math.random() * 100}
+          name={recipe.recipe.label}
+          image={recipe.recipe.image}
+          ingredientLines={recipe.recipe.ingredientLines}
+        />
+      ))}
     </div>
   );
 };

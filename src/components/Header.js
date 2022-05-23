@@ -1,6 +1,20 @@
 import React from "react";
+// import { useState } from "react";
 import './header.css';
-const Header = () => {
+
+
+
+
+
+
+const Header = props => {
+  const { search, onInputChange, onSearchClick } = props;
+
+
+
+
+
+ 
   return(
     <>
     <header>
@@ -9,16 +23,17 @@ const Header = () => {
         </div>
         <div className="nav_bar">
            <div className="searchBar">
-             <input type="text" placeholder="search recipies" />
-             <button>Search</button>
+             <input type="text" 
+             value={search}
+             onChange={onInputChange}
+             placeholder="search recipies"
+              />
+             <button onClick={onSearchClick}>Search</button>
            </div>
         </div>
     </header>
    
-
-
-    </>
+</>
   );
-};
-
-export default Header;
+}
+ export default Header;

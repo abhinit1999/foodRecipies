@@ -1,0 +1,58 @@
+*
+{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+footer
+{
+    background-color: black;
+    color: white;
+    width: auto;
+    height: 16vh;
+    display:grid;
+    grid-template-columns: 250px 400px;
+    justify-content: center;
+    align-items: center;
+}
+.follow
+{
+    border-left: 3px solid lightblue;
+}
+.follow h4
+{
+    margin-left: 20px;
+}
+.follow i
+{
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.follow a i
+{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.follow i:hover
+{
+color: rgb(134, 86, 86);
+}
+
+/* responsive design  */
+@media only screen and (max-width: 770px)
+{
+  footer
+  {
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+
+  }  
+  .follow
+{
+    margin-top: 20px;
+    border-left: none;
+}
+  
+}
